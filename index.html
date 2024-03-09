@@ -23,11 +23,11 @@
               <label class="input-label">燒製前內高(單位:mm)</label>
               <input type="text" placeholder="請填入數字" class="input" id="height" />
             </div>
-            <button type="submit" id="submit">送出</button>
+            <button type="submit" id="submit">燒製🔥</button>
           </div>
           <div class="form-row">
             <div class="input-string-row">
-              <label class="input-label">燒製後容積(ml)</label>
+              <label class="input-label">假設邊長各縮12%，燒製後容積(ml)</label>
               <div class="result" id="firedMl"></div>
             </div>
           </div>
@@ -46,5 +46,12 @@
       </main>
     </div>
     <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+      function addDarkmodeWidget() {
+        new Darkmode().showWidget();
+      }
+      window.addEventListener("load", addDarkmodeWidget);
+    </script>
   </body>
 </html>
