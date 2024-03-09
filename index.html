@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>又煦陶作杯子容量試算</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <main class="main">
+        <h1>又煦陶作杯子容量試算</h1>
+        <p class="info">※以陶瓷收縮15%為公式計算。僅適用於直筒形狀的杯子。</p>
+        <div class="form">
+          <div class="form-row">
+            <div class="input-string">
+              <label class="input-label">燒製前內直徑(單位:mm)</label>
+              <input type="text" placeholder="請填入數字" class="input" id="width" />
+            </div>
+            <div class="input-string">
+              <label class="input-label">燒製前內高(單位:mm)</label>
+              <input type="text" placeholder="請填入數字" class="input" id="height" />
+            </div>
+            <button type="submit" id="submit">送出</button>
+          </div>
+          <div class="form-row">
+            <div class="input-string-row">
+              <label class="input-label">燒製後容積(ml)</label>
+              <div class="result" id="firedMl"></div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-string-row">
+              <label class="input-label">燒製後直徑</label>
+              <div class="result" id="firedWidth"></div>
+            </div>
+            <div class="input-string-row">
+              <label class="input-label">燒製後高</label>
+              <div class="result" id="firedHeigh"></div>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">© 多多嬤</p>
+      </main>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
