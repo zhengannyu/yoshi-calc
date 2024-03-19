@@ -12,7 +12,7 @@
     <div class="container">
       <main class="main">
         <h1>又煦陶作杯子容量試算</h1>
-        <p class="info">※以陶瓷收縮15%為公式計算。僅適用於直筒形狀的杯子。</p>
+        <p class="info">※僅適用於直筒形狀的杯子。</p>
         <div class="form">
           <div class="form-row">
             <div class="input-string">
@@ -23,15 +23,17 @@
               <label class="input-label">燒製前內高(單位:mm)</label>
               <input type="text" placeholder="請填入數字" class="input" id="height" />
             </div>
+            <div class="input-string">
+              <label class="input-label">假設燒製收縮率(單位%)</label>
+              <input type="text" placeholder="請填入數字" class="input" id="pa" />
+            </div>
             <button type="submit" id="submit">燒製🔥</button>
           </div>
           <div class="form-row">
             <div class="input-string-row">
-              <label class="input-label">假設邊長各縮12%，燒製後容積(ml)</label>
+              <label class="input-label">燒製後容積(ml)</label>
               <div class="result" id="firedMl"></div>
             </div>
-          </div>
-          <div class="form-row">
             <div class="input-string-row">
               <label class="input-label">燒製後直徑</label>
               <div class="result" id="firedWidth"></div>

@@ -24,11 +24,13 @@ h1 {
   text-align: center;
   font-size: 28px;
   font-weight: 400;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
+  margin: 0;
 }
 
 .info {
-  padding: 20px 0;
+
+  padding: 0 0 30px ;
   color: #696969;
   font-size: 14px;
   text-align: center;
@@ -45,26 +47,25 @@ h1 {
 }
 
 .form-row {
-  margin-top: 40px;
+  margin-top: 30px;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
 }
 
 .input-string {
-  padding: 0 20px 0 0;
-  width: 40%;
+  padding: 10px 0;
+  width: 100%;
   display: flex;
   flex-flow: column wrap;
 }
 
 .input-label {
-  padding: 0 0 10px 0;
+  padding: 12px 0;
 }
 
 .input {
   padding: 12px;
   background-color: #fff;
-  /* border: none; */
   border: 1px solid #e6e6e6;
   border-radius: 8px;
 }
@@ -73,26 +74,25 @@ h1 {
   outline: none;
 }
 
-button {
-  width: 18%;
+#submit {
+  width: 100%;
+  margin: 10px 0;
+  padding: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
-  color: #000;
-  background-color: #fff;
+  color:white;
+  background-color: #303030;
   border: none;
   border-radius: 45px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
 }
 
-button:hover {
+#submit:hover {
   background-color: #ba2916;
-  /* box-shadow: 0px 15px 20px rgba(255, 198, 190, 0.4); */
   color: #fff;
-  transform: translateY(-3px);
 }
 
 .input-string-row {
@@ -103,8 +103,10 @@ button:hover {
 }
 
 .result {
-  margin-left: 30px;
-  font-weight: 500;
+padding: 12px 0;
+  margin-left: 10px;
+  font-weight: 900;
+  color: #ba2916;
 }
 
 @media (max-width: 575.98px) {
@@ -122,10 +124,11 @@ button:hover {
     width: 100%;
     margin: 10px 0;
   }
-
-  button {
-    padding: 10px;
-    margin: 20px auto;
-    width: 30%;
+  h1{
+    font-size: 18px;
+  }
+  #submit{
+    width: 100%;
+    padding: 20px;
   }
 }
